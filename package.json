@@ -1,0 +1,50 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@arbytez/cod4-rcon-commands",
+  "author": "arbytez",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arbytez/cod4-rcon-commands.git"
+  },
+  "homepage": "https://github.com/arbytez/cod4-rcon-commands",
+  "keywords": [
+    "cod4",
+    "rcon"
+  ],
+  "module": "dist/cod4-rcon-commands.esm.js",
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "husky": "^4.2.3",
+    "tsdx": "^0.12.3",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.5.1"
+  }
+}
