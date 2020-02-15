@@ -16,6 +16,7 @@ $ npm install --save @arbytez/cod4-rcon-commands
 
 ```ts
 import { createRconCommands } from '@arbytez/cod4-rcon-commands';
+// const { createRconCommands } = require('@arbytez/cod4-rcon-commands');
 
 const cod4ServerIp = '127.0.0.1';
 const cod4ServerPort = 28960;
